@@ -2,7 +2,6 @@
 	(:require [clojure.string :as str]))
 
 ;problem 1
-
 (defn multiple-of-number [number multiple-candidate]
   (if (true? (= 0 (rem number multiple-candidate)))
     number))
@@ -14,7 +13,6 @@
       (range 1 1000)))))
 
 ;problem 2
-
 (defn lazy-seq-fibo
     ([]
         (concat [0 1] (lazy-seq-fibo 0 1)))
